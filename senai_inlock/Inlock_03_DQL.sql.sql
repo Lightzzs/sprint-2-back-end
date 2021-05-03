@@ -1,4 +1,4 @@
-USE inlock_games_tarde;
+USE Inlock;
 
 SELECT * FROM TiposDeUsuario;
 SELECT * FROM Usuario;
@@ -16,5 +16,3 @@ ON Jogos.IdJogo = Estudios.IdEstudio
 SELECT Estudios.nomeEstudio AS Estudio ,Jogos.nomeJogo AS Jogos FROM Estudios
 FULL OUTER JOIN Jogos
 ON Estudios.IdEstudio = Jogos.IdJogo
-
-
